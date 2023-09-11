@@ -6,13 +6,13 @@ import sqlite3
 conn = sqlite3.connect("climate.db") # Connector
 cursor = conn.cursor() # Cursor for queries
 cursor.execute("SELECT year, co2, temperature FROM ClimateData ")
-data = cursor.fetchall()
-conn.close()
+data = cursor.fetchall() # Fetchall rows from results
+conn.close() # Close conn
 
 
-years = []
-co2 = []
-temp = []
+years = [row[0] for row in data]
+co2 = [row[1] for row in data]
+temp = [row[2] for row in data]
 
 plt.subplot(2, 1, 1)
 plt.plot(years, co2, 'b--') 
