@@ -1,2 +1,14 @@
 The Git Command Log
 
+1)  git add git_txt.txt climate_q1.py
+
+    git commit -m "Created git_txt.txt file to keep log history. climate_q1.py: Created connector to climate.db,
+                  Created cursor for queries, Created an execute query from the database."
+    git push origin
+
+2)  git add climate_q1.py
+
+    git commit -m "Improved data separation using for loops and adjusted database connection closing position"
+
+    git push origin
+
