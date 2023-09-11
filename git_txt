@@ -1,16 +1,23 @@
 The Git Command Log
 
-1) git clone https://github.com/crashbox-hub/Quiz_week_8.git
+1)  git clone https://github.com/crashbox-hub/Quiz_week_8.git
 
 2)  git add git_txt.txt climate_q1.py
 
     git commit -m "Created git_txt.txt file to keep log history. climate_q1.py: Created connector to climate.db,
                   Created cursor for queries, Created an execute query from the database."
-    git push origin
+
+    git push origin main
 
 3)  git add climate_q1.py
 
     git commit -m "Improved data separation using for loops and adjusted database connection closing position"
 
-    git push origin
+    git push origin main
+
+4)  git add climate_q2.py
+
+    git commit -m "Updated git_txt.txt.  Updated climate_q2.py - loaded .csv data and extracted columns into separate lists"
+
+    git push origin main
 
